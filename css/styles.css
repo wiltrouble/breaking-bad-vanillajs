@@ -25,7 +25,6 @@ body {
     padding-right: 1.4rem;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid red;
 }
 
 .navbar-logo {
@@ -40,7 +39,7 @@ body {
 }
 
 #navbar {
-    --navbar-height: 64px;
+    --navbar-height: 50px;
     position: fixed;
     height: var(--navbar-height);
     background-color: var(--first-color);
@@ -165,6 +164,35 @@ body {
 #navbar.opened .navbar-links {
     padding: 1em;
     max-height: none;
+}
+
+.main-container {
+    border: 1px solid red;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 50px;
+}
+
+.footer-container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    /* background: var(--first-color); */
+    margin: 5% 2% 1%;
+    border-top: 1px solid var(--first-color)
+
+}
+
+.footer-labels {
+    display: flex;
+    justify-content: space-evenly;
+    width: 500px;
+    font-size: 15px;
+    color: black;
 }
 
 @media screen and (min-width: 700px) {
