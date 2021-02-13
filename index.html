@@ -4,10 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
     <title>Breaking bad</title>
 </head>
 <body>
-    
+    <header id="navbar">
+        <nav class="navbar-container container">
+          <a href="/" class="home-link">
+            <div class="navbar-logo">
+                <img src="./img/logo.png" width="35" height="35" alt="">
+            </div>
+            Breaking bad
+          </a>
+          <button type="button" class="navbar-toggle" aria-label="Open navigation menu">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <div class="navbar-menu">
+            <ul class="navbar-links">
+              <li class="navbar-item"><a class="navbar-link" href="/">About</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="#">Blog</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="#">Careers</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="#">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+    </header>
+
+
+    <div id="name"></div>
     <script type="module" src="./js/index.js"></script>
+    <script src="./js/navBar.js"></script>
 </body>
 </html>
