@@ -5,13 +5,13 @@ export default class Character {
         this.img = img;
         this.nameContainer = document.querySelector('#name');
         this.imageContainer = document.querySelector('#image');
+        this.nicknameContainer = document.querySelector('#nickname');
         this.render();
     }
 
     buildCharacterData() {
         return `
             <h2>${this.name}</h2>
-            <h2>${this.nickname}</h2>
         `
     }
 
@@ -21,9 +21,16 @@ export default class Character {
         `
     }
 
+    buildCharacterNickname() {
+        return `
+            <h2>${this.nickname}</h2>
+        `
+    }
+
     render() {
         this.nameContainer.innerHTML = this.buildCharacterData();
         this.imageContainer.innerHTML = this.buildCharacterAvatar();
+        // this.nicknameContainer.innerHTML = this.buildCharacterNickname();
     }
 
 }

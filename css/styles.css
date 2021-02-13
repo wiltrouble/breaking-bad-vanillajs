@@ -168,12 +168,53 @@ body {
 }
 
 .main-container {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     position:absolute;
     left: 0;
     right: 0;
     top: 50px;
     z-index: -1000;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 25% 25% 1fr;
+    grid-template-areas: 
+        "search search"
+        "name name"
+        "image fields"
+
+}
+
+.fields {
+    grid-area: fields;
+    display: grid;
+  
+}
+
+.cell {
+    
+}
+
+.search {
+    grid-area: search;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container {
+    grid-area: image;
+    text-align: center;
+}
+
+.name {
+    grid-area: name;
+    text-align: center;
+}
+
+.nickname {
+    grid-area: nickname;
+    text-align: center;
 }
 
 .footer-container {
@@ -201,17 +242,19 @@ body {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 .avatar {
     /* border-radius: 50%; */
     max-width: 50%;
     background-size: contain;
-    width: 300px;
+    width: 100%;
 }
 
 .image-container {
-    width: 400px;
-    height: 400px;
+    /* width: 400px;
+    height: 400px; */
     
 }
 

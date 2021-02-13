@@ -38,8 +38,6 @@ async function printLabels() {
     const deaths = await apiDeaths.getAllDeaths();
     const deathsLength = Object.keys(deaths).length;
     labels.push(deathsLength);
-
-
     
     return new Footer(labels)
 }
@@ -47,5 +45,5 @@ async function printLabels() {
 
 
 
-initApp(3);
+initApp(1);
 printLabels()
