@@ -197,6 +197,11 @@ body {
     color: black;
 }
 
+.label-item {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
 .avatar {
     /* border-radius: 50%; */
     max-width: 50%;
@@ -244,8 +249,9 @@ body {
 
 @media screen and (max-width: 500px) {
     .footer-labels {
-        display: block;
         text-align: center;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
     }
 
     .footer-labels p {
