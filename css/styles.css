@@ -168,7 +168,7 @@ body {
 
 .main-container {
     border: 1px solid red;
-    position: fixed;
+    position:relative;
     left: 0;
     right: 0;
     top: 50px;
@@ -193,6 +193,19 @@ body {
     width: 500px;
     font-size: 15px;
     color: black;
+}
+
+.avatar {
+    /* border-radius: 50%; */
+    max-width: 100%;
+    background-size: contain;
+    width: 300px;
+}
+
+.image-container {
+    width: 400px;
+    height: 400px;
+    
 }
 
 @media screen and (min-width: 700px) {
@@ -224,6 +237,18 @@ body {
 
     #navbar .navbar-link:last-child {
         margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footer-labels {
+        display: block;
+        text-align: center;
+    }
+
+    .footer-labels p {
+        display: inline-block;
+        border: 1px solid white;
     }
 }
 
