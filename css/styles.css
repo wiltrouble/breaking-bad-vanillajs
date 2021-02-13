@@ -252,12 +252,6 @@ body {
     width: 100%;
 }
 
-.image-container {
-    /* width: 400px;
-    height: 400px; */
-    
-}
-
 @media screen and (min-width: 700px) {
     .navbar-toggle {
         display: none;
@@ -317,6 +311,15 @@ body {
             "image"
             "fields"
     
+    }
+
+    .label-item {
+        display: block;
+        margin-block-start: 0.5em;
+        margin-block-end: 0.5em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-size: 12px;
     }
 }
 
