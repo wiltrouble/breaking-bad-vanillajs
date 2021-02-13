@@ -4,10 +4,8 @@ export default class Character {
         this.nickname = nickname;
         this.img = img;
         this.nameContainer = document.querySelector('#name');
-        this.imageContainer = document.querySelector('#image')
+        this.imageContainer = document.querySelector('#image');
         this.render();
-
-        console.log(name)
     }
 
     buildCharacterData() {
