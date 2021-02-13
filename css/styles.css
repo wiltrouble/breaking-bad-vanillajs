@@ -197,7 +197,7 @@ body {
 
 .avatar {
     /* border-radius: 50%; */
-    max-width: 100%;
+    max-width: 50%;
     background-size: contain;
     width: 300px;
 }
