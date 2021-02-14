@@ -218,7 +218,7 @@ body {
 }
 
 .footer-container {
-    position: fixed;
+    position:fixed;
     left: 0;
     right: 0;
     bottom: 0;
@@ -304,7 +304,7 @@ body {
     .main-container {
 
         grid-template-columns: 1fr;
-        grid-template-rows: 25% 25% 1fr;
+        grid-template-rows: 15% 10% 1fr 1fr;
         grid-template-areas: 
             "search"
             "name"
@@ -320,6 +320,10 @@ body {
         margin-inline-start: 0px;
         margin-inline-end: 0px;
         font-size: 12px;
+    }
+
+    .fields {
+        padding-top: 1em;;
     }
 }
 
